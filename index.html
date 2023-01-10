@@ -1,102 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Button Program" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Justin.Lavoie" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>Justin Button Program</title>
+    <link
+      rel="canonical"
+      href="https://Justin-Lavoie16.github.io/Unit-5-02-JS/"
+    />
+    <link rel="manifest" href="/Unit-5-02-JS/manifest.webmanifest" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      />
+    </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  </head>
+  <title>Random number</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Button Program" />
-  <meta name="keywords" content="mths, ics2o" />
-  <meta name="author" content="Justin.Lavoie" />
-  <meta name="theme-color" content="#FFFFFF" />
-  <title>Justin Button Program</title>
-  <link rel="canonical" href="https://Justin-Lavoie16.github.io/Unit-5-02-JS/" />
-  <link rel="manifest" href="/Unit-5-02-JS/manifest.webmanifest" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none"
-    onload="if(media!='all')media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  </noscript>
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" media="none"
-    onload="if(media!='all')media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
-  </noscript>
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-</head>
-<title>Random number</title>
-  
-
-<body>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js"></script>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Button Program</span>
-      </div>
-    </header>
-    <main class="mdl-layout__content">
-      <p></p>
-             <h1>Rock Paper Scissor!</h1>
-      <img src="./images/paper.png" alt="Computer" width="25%" height="25%" />
-      <p></p>
-      <div id="radio1">
-      </div>
-      <div id="radio2">
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="paper">
-          <input checked class="mdl-radio__button" id="paper" name="selection" type="radio" value="true" />
-          <span class="mdl-radio__label">✋ paper</span>
-        </label>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Button Program</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <p></p>
+        <h1>Rock Paper Scissor!</h1>
+        <img src="./images/paper.png" alt="Computer" width="25%" height="25%" />
+        <p></p>
+        <div id="radio1"></div>
+        <div id="radio2">
+          <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="paper"
+          >
+            <input
+              checked
+              class="mdl-radio__button"
+              id="paper"
+              name="selection"
+              type="radio"
+              value="true"
+            />
+            <span class="mdl-radio__label">✋ paper</span>
+          </label>
         </div>
         <div id="radio3">
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rock">
-            <input checked class="mdl-radio__button" id="rock" name="selection" type="radio" value="true" />
+            <input
+              checked
+              class="mdl-radio__button"
+              id="rock"
+              name="selection"
+              type="radio"
+              value="true"
+            />
             <span class="mdl-radio__label"> ✊ Rock </span>
           </label>
-          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="scissor">
-            <input class="mdl-radio__button" id="scissor" name="selection" type="radio" value="true" />
+          <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="scissor"
+          >
+            <input
+              class="mdl-radio__button"
+              id="scissor"
+              name="selection"
+              type="radio"
+              value="true"
+            />
             <span class="mdl-radio__label">✌️ scissor</span>
           </label>
         </div>
         <div>
           <!-- Raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="myButtonClicked()">
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked()"
+          >
             See Results
-            
           </button>
         </div>
         <!-- basic text -->
-      <p></p>
+        <p></p>
         <div id="hello-world"></div>
-              <p></p>
+        <p></p>
 
-              <div id="me2"></div>
+        <div id="me2"></div>
         <p></p>
 
         <div id="win"></div>
         <div id="lose"></div>
-      <div id="tie"></div>
-      
-              <p></p>
-        <p></p>
-
-
+        <div id="tie"></div>
 
         <p></p>
-          <p></p>        <p></p>
+        <p></p>
 
-      <p></p>
-           <div id="answer"></div>
-      <p></p>
-<a href="./index2.html">Click here if you dont know how to play.</a>
-<p></p>
-            <div id="game"></div>
-    </main>
-  </div>
-</body>
+        <p></p>
+        <p></p>
+        <p></p>
 
+        <p></p>
+        <div id="answer"></div>
+        <p></p>
+        <a href="./index2.html">Click here if you dont know how to play.</a>
+        <p></p>
+        <div id="game"></div>
+      </main>
+    </div>
+  </body>
 </html>
