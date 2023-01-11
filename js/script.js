@@ -8,7 +8,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
 const ROCK = 1
 const PAPER = 2
