@@ -1,10 +1,14 @@
+/* Created by: Justin Lavoie And Allen Li *
+ Created on: January 2023
+ */
+
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/Unit-5-02-JS/sw.js", {
-    scope: "/Unit-5-02-JS/",
+  navigator.serviceWorker.register("/ICS2O-Final-Project-Justin-Allen/sw.js", {
+    scope: "/ICS2O-Final-Project-Justin-Allen/",
   })
 }
 
-;("use strict")
+"use strict"
 
 const ROCK = 1
 const PAPER = 2
