@@ -4,7 +4,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
 const ROCK = 1
 const PAPER = 2
@@ -166,28 +166,28 @@ function myButtonClicked() {
 
   //this code bellow make it so that instead of saying undefined it says 0. The void makes it so it doesnt come back to 0
 
-  if ( localStorage.wins ==  void 0 ) {
-    localStorage.wins = 0;
+  if (localStorage.wins == void 0) {
+    localStorage.wins = 0
   }
 
-    if ( localStorage.ties ==  void 0 ) {
-    localStorage.ties = 0;
+  if (localStorage.ties == void 0) {
+    localStorage.ties = 0
   }
 
-    if ( localStorage.lost ==  void 0 ) {
-    localStorage.lost = 0;
+  if (localStorage.lost == void 0) {
+    localStorage.lost = 0
   }
-    if ( localStorage.average ==  void 0 ) {
-    localStorage.average = 0;
+  if (localStorage.average == void 0) {
+    localStorage.average = 0
   }
-    if ( localStorage.winner ==  void 0 ) {
-    localStorage.winner = 0;
+  if (localStorage.winner == void 0) {
+    localStorage.winner = 0
   }
-    if ( localStorage.loser ==  void 0 ) {
-    localStorage.loser = 0;
+  if (localStorage.loser == void 0) {
+    localStorage.loser = 0
   }
-    if ( localStorage.tier ==  void 0 ) {
-    localStorage.tier = 0;
+  if (localStorage.tier == void 0) {
+    localStorage.tier = 0
   }
 
   if (localStorage.CookieCountGoUp >= 10)
